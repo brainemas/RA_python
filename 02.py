@@ -19,7 +19,7 @@ if D > 0:
     for i in result:
         print(i)
 elif D == 0:
-    x1 = - abc[1]/2*abc[0]*abc[2]
+    x1 = - abc[1] / 2 * abc[0] * abc[2]
     print('В уравнении один корень:\nx1 = ', x1)
 else:
     print('Корней в уравнении нет!')
