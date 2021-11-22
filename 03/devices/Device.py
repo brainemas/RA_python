@@ -14,7 +14,7 @@ def __take_line(collection: List[str]) -> str:
 def __write_line(collection) -> str:
     try:
         collection.append('new_line')
-        return collection[len(collection)-1]
+        # return collection[len(collection)-1]
     except IndexError:
         raise IOError('Cannot writing')
 
