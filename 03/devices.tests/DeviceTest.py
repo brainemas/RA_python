@@ -23,7 +23,9 @@ class DeviceTestCase(unittest.TestCase):
     def test_write_line(self):
         self.assertRaises(PermissionError, write_line, open_device('/devices/dev0'))
         self.assertRaises(IOError, write_line, open_device('/devices/dev0'))
-        self.assertEqual('new_line', write_line(open_device('/devices/dev3')))
+        dev = open_device('/devices/dev2')
+        write_line(dev)
+        self.assertEqual('new_line', read_line(dev)
 
 
 if __name__ == '__main__':
